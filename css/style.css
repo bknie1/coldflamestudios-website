@@ -1,3 +1,16 @@
+/*
+Pallette:
+
+Dark Red: 185, 26, 31 (#B91A1F)
+Orange: 239, 49, 37 (#EF3125)
+Beige: 249, 181, 103 (#F9B567)
+Cyan: 0, 216, 255 (#00D8FF)
+Light Blue: 0, 151, 255 (#0097FF)
+Blue: 0, 112, 255 (#0070FF)
+Gray-Blue: 113, 205, 228 (#71CDE4)
+Gray: 171, 223, 237 (#ABDFED)
+*/
+
 /* Fade */
 
 @keyframes fadein {
@@ -31,25 +44,13 @@
 
 /* /Fade */
 
-/* Name */
-
-.div {
-
+a {
+  color: white;
 }
 
-/* /Name */
-
-/* Pallette
-
-Dark Red: 185, 26, 31 (#B91A1F)
-Orange: 239, 49, 37 (#EF3125)
-Beige: 249, 181, 103 (#F9B567)
-Cyan: 0, 216, 255 (#00D8FF)
-Light Blue: 0, 151, 255 (#0097FF)
-Blue: 0, 112, 255 (#0070FF)
-Gray-Blue: 113, 205, 228 (#71CDE4)
-Gray: 171, 223, 237 (#ABDFED)
-*/
+a:hover {
+color: #0070FF;
+}
 
 body {
   background-color: black;
@@ -61,16 +62,16 @@ body {
 }
 
 .carousel {
-  height: auto;
-  width: 40em;
+  padding-top: 7.5em !important;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   align-content: center;
-  max-width: 40em;
+  height: 75%;
+  width: 100%;
 }
 
-.content-bg {
+.content-background {
 background: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
@@ -81,13 +82,17 @@ background: linear-gradient(
 }
 
 .contact {
-  padding-bottom: 2.5em;
+  padding-bottom: 5em;
   padding-top: 5em;
   text-align: center;
 }
 
+.contact-details {
+  padding-top: 1em !important;
+}
+
 .darken, .nav-item, .dropdown-item, .btn-dark, .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, .75);
   -webkit-transition: all 0.5s linear;
      -moz-transition: all 0.5s linear;
       -ms-transition: all 0.5s linear;
@@ -98,7 +103,7 @@ background: linear-gradient(
 }
 
 .darken:hover {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 1);
     -webkit-transition: all 0.5s linear;
        -moz-transition: all 0.5s linear;
         -ms-transition: all 0.5s linear;
@@ -106,8 +111,16 @@ background: linear-gradient(
             transition: all 0.5s linear;
 }
 
+div {
+  padding: 0em 0em 0em 0em !important;
+}
+
 .emph {
   font-style: italic;
+}
+
+.fa {
+  padding-top: 1em !important;
 }
 
 .footer {
@@ -132,9 +145,9 @@ html, body {
   background-color: "black";
 }
 
-.navbar-brand img {
-  height: 20%;
-  width: 20%;
+.logo {
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .nav-item:hover, .dropdown-item:hover, .btn-dark:hover {
@@ -149,7 +162,7 @@ html, body {
 }
 
 .padding-section {
-  padding: 10em 0em 10em 0em;
+  padding: 5em 0em 5em 0em;
 }
 
 .subtitle {
@@ -158,16 +171,19 @@ html, body {
 }
 
 .tagline1{
-  color: #0070FF
+  color: #0070FF;
 }
 
 .tagline2{
-  color: #B91A1F
+  color: #B91A1F;
 }
 
 .title {
   color: #00D8FF;
   font-size: 3em;
   font-weight: bold;
-  padding-top: 2.5em;
+}
+
+.company {
+  padding-top: 2.5em !important;
 }
