@@ -1,14 +1,8 @@
-document.addEventListener('DOMContentLoaded', main(), true);
+$( document ).ready(function() {
+  $(document).on("scroll", updateNavbarBackground);
+});
 
-function main() {
-  fade();
+function updateNavbarBackground() {
+  var navbar = $("#mainNavbar");
+  navbar.toggleClass("scrolled", $(this).scrollTop() > navbar.height());
 }
-
-//------------------------------------------------------------------------------
-function fade() {
-  setTimeout(function () {
-    document.body.style.opacity = '1'; // Fade In
-  }, 750);
-}
-
-//------------------------------------------------------------------------------
